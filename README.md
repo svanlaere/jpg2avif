@@ -1,5 +1,5 @@
 # Batch convert JPG to AVIF
-For personal use I created a simple bash script to batch convert large amounts of JPG to AVIF images.  
+For personal use I created a simple bash script to batch convert large amounts of images from JPG to AVIF format.  
 Nothing fancy, but perhaps it helps someone else too.
 
 ## Install
