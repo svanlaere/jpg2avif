@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\Run Batch script]
+@="&Convert JPG to AVIF"
+
+[HKEY_CLASSES_ROOT\Directory\shell\Run Batch script\command]
+@="\"C:\\jpg2avif\\run.bat\" \"%1\""
