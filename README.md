@@ -5,7 +5,7 @@ Nothing fancy, but perhaps it helps someone else too.
 ## Install
 Extract the compressed archive and move the folder to your C: drive.  
 Make sure the folder is named "jpg2avif".  
-Next add the "Convert JPG to AVIF" option in the Windows right contextmenu  
+Next add the "Convert JPG to AVIF" option in Windows right contextmenu  
 by double clicking the "Add to Contextmenu" file and confirming this action.
 
 ## Uninstall  
