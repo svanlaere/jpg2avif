@@ -5,10 +5,12 @@ SET binpath=%workpath%\bin
 SET avif=%binpath%\avif.exe
 IF NOT DEFINED args GOTO END
 PUSHD %args%
+IF NOT EXIST *.jpg GOTO NOJPG
+RENAME *.JPG *.jpg
 ECHO Converting has started (it might take some time)
 ECHO.
 FOR /R %%A IN (*.jpg) DO (
-IF NOT EXIST "%%~pnA.avif" (
+  IF NOT EXIST "%%~pnA.avif" (
     %avif% -e %%~A -o %%~pnA.avif
 	ECHO Saved converted file:
 	ECHO %%~nA.avif
@@ -18,4 +20,9 @@ IF NOT EXIST "%%~pnA.avif" (
 ECHO Converting has finished
 ECHO.
 :END
+ECHO Converting failed: no arguments
+ECHO.
+:NOJPG
+ECHO Converting failed: no JPG found
+ECHO.
 PAUSE
