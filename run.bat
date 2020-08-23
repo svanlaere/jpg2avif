@@ -12,9 +12,9 @@ ECHO.
 FOR /R %%A IN (*.jpg) DO (
   IF NOT EXIST "%%~pnA.avif" (
     %avif% -e %%~A -o %%~pnA.avif
-	ECHO Saved converted file:
-	ECHO %%~nA.avif
-	ECHO.
+	  ECHO Saved converted file:
+	  ECHO %%~nA.avif
+	  ECHO.
   )
 )
 ECHO Converting has finished
