@@ -9,8 +9,8 @@ Next add the "Convert JPG to AVIF" option in the Windows right contextmenu
 by double clicking the "Add to Contextmenu" file and confirming this action.
 
 ## Uninstall  
-Remove the add the "Convert JPG to AVIF" option from the Windows right contextmenu  
-by double clicking the "Remove from Contextmenu" file and confirming this action.
+Remove the add the "Convert JPG to AVIF" option from the Windows right contextmenu   
+by double clicking the "Remove from Contextmenu" file and confirming this action.  
 Delete the folder "jpg2avif" from your C: drive. 
 
 ## Usage
