@@ -19,10 +19,15 @@ FOR /R %%A IN (*.jpg) DO (
 )
 ECHO Converting has finished
 ECHO.
+PAUSE
+EXIT
 :END
 ECHO Converting failed: no arguments
 ECHO.
+PAUSE
+EXIT
 :NOJPG
 ECHO Converting failed: no JPG found
 ECHO.
 PAUSE
+EXIT
