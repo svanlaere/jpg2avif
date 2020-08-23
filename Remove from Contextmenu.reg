@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\Directory\shell\jpg2avif]
+[-HKEY_CLASSES_ROOT\Directory\shell\jpg2avif]
 @="&Convert JPG to AVIF"
 
-[HKEY_CLASSES_ROOT\Directory\shell\jpg2avif\command]
+[-HKEY_CLASSES_ROOT\Directory\shell\jpg2avif\command]
 @="\"C:\\jpg2avif\\run.bat\" \"%1\""
