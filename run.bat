@@ -10,12 +10,11 @@ RENAME *.JPG *.jpg
 ECHO Converting has started (it might take some time)
 ECHO.
 FOR /R %%A IN (*.jpg) DO (
-  IF NOT EXIST "%%~pnA.avif" (
-    %avif% -e %%~A -o %%~pnA.avif
-	  ECHO Saved converted file:
-	  ECHO %%~nA.avif
-	  ECHO.
-  )
+IF NOT EXIST "%%~pnA.avif" (
+%avif% -e %%~A -o %%~pnA.avif
+ECHO Saved converted file:
+ECHO.
+)
 )
 ECHO Converting has finished
 ECHO.
