@@ -1,4 +1,5 @@
 @ECHO OFF
+SETLOCAL enableextensions enabledelayedexpansion
 SET args=%*
 SET workpath=%~dp0
 SET binpath=%workpath%\bin
@@ -11,10 +12,12 @@ ECHO Converting has started (it might take some time)
 ECHO.
 FOR /R %%A IN (*.jpg) DO (
 IF NOT EXIST "%%~pnA.avif" (
+    SET FILENAME=%%~nxA
+    RENAME "%%A" !FILENAME: =_!
     %avif% -e %%~A -o %%~pnA.avif
     ECHO Saved converted file:
     ECHO.
-  ) else (
+  ) ELSE (
     ECHO File exists:
     ECHO %%~nA.avif
     ECHO.	
